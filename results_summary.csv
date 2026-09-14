@@ -1,0 +1,11 @@
+run_id,model,code_ran,collision_free,all_goals_reached,makespan,total_distance,num_collisions,attempts_used,best_attempt_collisions,best_attempt_goals_reached,error
+1,qwen2.5:7b,True,True,True,38,170,0,1,0,True,
+2,qwen2.5:7b,False,False,False,,,0,3,,,All attempts crashed or timed out
+3,qwen2.5:7b,True,True,True,38,170,0,2,0,True,
+4,qwen2.5:7b,True,True,True,38,170,0,2,0,True,
+5,qwen2.5:7b,True,True,True,38,170,0,1,0,True,
+6,qwen2.5:7b,True,False,True,38,170,10,3,10,True,Logic errors remain after 3 attempts
+7,qwen2.5:7b,True,True,True,38,170,0,1,0,True,
+8,qwen2.5:7b,False,False,False,,,0,3,,,All attempts crashed or timed out
+9,qwen2.5:7b,True,True,True,39,175,0,2,0,True,
+10,qwen2.5:7b,True,True,True,38,170,0,1,0,True,
