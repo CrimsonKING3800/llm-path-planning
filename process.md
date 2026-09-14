@@ -18,46 +18,54 @@ The pipeline is coordinated by an orchestrator (`run_poc.py`) and is broken into
 ## 2. Component Logic and Workflow
 
 ### The Orchestrator (`run_poc.py`)
-This script acts as the main driver. It takes an objective configuration (grid size, agents, start/goal coordinates, obstacles) and manages multiple runs of the pipeline (e.g., 5 or 10 runs). For each run, it orchestrates the A \u2192 B \u2192 C stages and handles the retry limits (maximum of 3 attempts per run). 
+This script acts as the main driver:
+- **Objective Configuration**: Defines grid size, agent counts, start/goal coordinates, static obstacles, movement rules, and optimization objectives.
+- **Multiprocessing Isolation & Timeout**: Runs generated algorithms inside an isolated worker process (`_run_plan_in_worker`) with a strict 10-second execution timeout (`_execute_code_with_timeout`) to safely guard against infinite loops or blocking code.
+- **Best Partial Result Tracking**: Tracks the best-performing code candidate (`best_result`) across retries—prioritizing minimal collisions and maximum goal completions—so that if retries are exhausted, the best attempt metrics are reported rather than the last failure.
+- **Retry Management**: Enforces a budget (default: 3 attempts per run) for static, runtime, illegal move, or logic corrections before finalizing the run.
 
-### Stage A: Generation (`algorithm_gen.py`)
-This module interacts directly with the local LLM (`qwen2.5:7b` via Ollama) to produce the code.
-- **Initial Generation**: The LLM is provided with a strict prompt defining the grid environment, the constraints (4-connected movement, obstacle avoidance), and a requirement to write a specific `plan(objective)` function. 
-- **AST Sanitization**: The raw text output from the LLM is parsed using Python's `ast` (Abstract Syntax Tree) to extract only the valid Python code and drop any conversational filler.
-- **Three-Pronged Correction Paths**: If the code fails during Stage B, it is routed to one of three specialized correction prompts based on the exact failure type:
-  1. **Runtime Error Correction**: If the code crashes or has a syntax error, the LLM receives the stack trace and the exact exception.
-  2. **Illegal Move Correction**: If an agent jumps across the map or moves diagonally, the LLM is told exactly which move was illegal and reminded of the 4-connected rules.
-  3. **Logic / Collision Correction**: If the code runs flawlessly but agents collide or fail to reach their goals, the LLM is given the simulation statistics and told to fix its collision-avoidance logic.
+### Stage A: Generation & Correction (`algorithm_gen.py`)
+This module interacts directly with the local LLM (`qwen2.5:7b` via Ollama) to produce and refine code:
+- **Initial Prompting**: Prompts the LLM with environment specs, coordinate formatting guidelines (tuples vs. lists), movement constraints, and strict output rules (no trailing execution code).
+- **AST Sanitization (`_extract_and_clean_code`)**: Parses raw LLM text using Python's `ast` (Abstract Syntax Tree), verifies code syntax, ensures a top-level `plan()` function exists, and strips out non-definition code (e.g., test calls or `if __name__ == '__main__':` blocks).
+- **Four-Pronged Correction Paths**:
+  1. **Static Validation Retry**: Retries immediately if generated text fails AST syntax parsing or omits the `plan()` function signature.
+  2. **Runtime Error Correction**: Captures tracebacks and stack traces from execution crashes and prompts the LLM to fix the exception.
+  3. **Illegal Move Correction**: Detects movement rule violations (e.g., non-adjacent steps or illegal diagonal moves based on 4-connected or 8-connected settings) and instructs the LLM with valid movement rules.
+  4. **Logic / Collision Correction**: Feeds back vertex collision details, unreached goal lists, makespan, and total distance to guide structural algorithm fixes when code executes without crashing.
 
 ### Stage B: Simulation & Validation (`simulator.py`)
-This module is the testing ground for the generated algorithm.
-- **Execution**: It imports the LLM's `plan()` function dynamically and runs it with a strict timeout to prevent infinite loops.
-- **Validation**: It steps through the returned paths frame by frame to verify:
-  - Agents don't step out of bounds or into obstacles.
-  - Agents only make valid adjacent moves (or wait in place).
-  - Agents don't occupy the same cell at the same time, nor do they swap locations directly (edge collisions).
-- **Metrics**: It calculates the makespan (time to finish), total distance traveled, and counts the total collisions.
-- **Animation**: For the first entirely successful run, it uses `matplotlib` to render and save a visual animation of the paths.
+This module independently tests the LLM-generated code without relying on the model's self-reported success:
+- **Execution Interface (`run_simulation`)**: Dynamically invokes `plan(grid_size, starts, goals, obstacles, constraints)` and captures output paths.
+- **Independent Validation (`validate_paths`)**: Evaluates paths frame-by-frame for legal execution:
+  - **Start & Goal Verification**: Ensures each agent starts at its designated origin and ends at its assigned target.
+  - **Grid & Obstacle Constraints**: Verifies no agent moves out of bounds or steps on static obstacle cells.
+  - **Movement Constraints**: Enforces 4-connected (Manhattan distance ≤ 1) or 8-connected max-distance bounds.
+  - **Vertex Collisions**: Flags timesteps where two or more agents occupy the exact same cell.
+  - **Edge / Swap Collisions**: Flags timesteps where two agents swap positions simultaneously between adjacent steps.
+- **Metrics Computation**: Measures per-agent steps, overall makespan, and total distance.
+- **Animation (`animate_paths`)**: Uses `matplotlib` to render and save an animated GIF (`first_success_animation.gif`) of agent trajectories for the first fully successful run.
 
 ### Stage C: Interpretation (`interpret.py`)
-After the execution attempt loop ends (either by succeeding or failing after 3 attempts), the final statistics (collisions, steps, makespan) are passed back to the LLM. The LLM translates these raw metrics into a plain-English diagnostic report, determining if the objective was met and what likely caused any failures.
+After simulation retries conclude (whether successful or exhausted), final metrics are formatted and sent to the LLM. The model returns a plain-language summary addressing whether the objective was met, probable causes for any remaining collisions/failures, and recommendations for algorithm improvement.
 
 ---
 
-## 3. Data Logging and History Tracking
+## 3. Data Logging and Observability
 
-The system is designed for high observability so we can see exactly how the LLM improves:
-- **Attempt History**: Inside `run_poc.py`, every single code version generated across all attempts (including the corrections) is saved into a list. This allows us to track exactly what the LLM changed from attempt 1 to attempt 3.
-- **Per-Run JSON**: All data (the generated code history, final paths, LLM interpretations) is saved to a detailed `results/<run_id>.json` file.
-- **CSV Summary**: A final `results_summary.csv` is compiled at the end of the batch. It records boolean success flags, collision counts, the number of attempts used, and the model name for easy evaluation.
+The system maintains end-to-end visibility into performance and model iteration:
+- **Attempt History**: Saves every code iteration, failure diagnosis, and collision count across all attempts within each run.
+- **Per-Run JSON Logs**: Writes full execution details, attempt histories, and LLM interpretations to `results/run_<id>.json`.
+- **CSV Summary**: Compiles batch statistics into `results_summary.csv`, recording success flags (`code_ran`, `collision_free`, `all_goals_reached`), makespan, distance, collision counts, model name, and total attempts used.
 
 ---
 
 ## 4. Results & Performance
 
-Running this pipeline on the local `qwen2.5:7b` model yields impressive results for a small model:
-- **High Initial Success**: The model frequently achieves 0-collision, full-success runs on the very first attempt. In a recent 5-run batch, 3 out of 5 runs were solved perfectly on attempt 1.
-- **Correction Efficacy**: The three-pronged correction loop successfully salvages runs that crash on the first attempt by providing highly targeted feedback.
-- **Limitations**: When the model struggles with complex logic (e.g., getting multiple agents stuck in a narrow corridor), it occasionally fails to resolve the bottleneck within the tight 3-attempt budget. 
+Running this pipeline on the local `qwen2.5:7b` model demonstrates autonomous algorithm design capabilities:
+- **High Initial Success**: The model frequently achieves 0-collision, full-success runs on the first attempt for standard grid layouts.
+- **Correction Loop Efficacy**: Targeted prompt feedback effectively guides the model to fix runtime exceptions, syntax issues, and collision bugs within 1–2 correction cycles.
+- **Observed Bottlenecks**: Complex corridor bottlenecks with multiple agents sometimes exceed the tight 3-attempt budget when delicate prioritization logic is required.
 
-This PoC demonstrates that an LLM can effectively write, execute, and debug its own spatial-reasoning algorithms entirely autonomously.
+This PoC demonstrates that an LLM can effectively write, execute, validate, and debug spatial-reasoning algorithms in an entirely automated pipeline.
+
