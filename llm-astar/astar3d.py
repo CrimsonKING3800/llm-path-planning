@@ -1,5 +1,6 @@
 import heapq
 import itertools
+import time
 
 from config import PRIORITY_VARIANT, CLOSED_NODE_VARIANT
 
@@ -132,6 +133,7 @@ def llm_astar(start, goal, env, targets):
         'waypoints_reached': 0,
         'open_size_at_switches': [],
         'peak_open_size': 0,
+        'reprioritization_time': 0.0,
         'termination_reason': 'Unknown'
     }
     
@@ -196,12 +198,15 @@ def llm_astar(start, goal, env, targets):
                 current_target = waypoint_targets[current_target_idx]
                 
                 # Reprioritize OPEN set with the new target
+                t0_reprio = time.time()
                 new_OPEN = []
                 for _, old_g, c, state in OPEN:
                     new_f = old_g + heuristic(state, goal) + target_cost(state, current_target, goal)
                     new_OPEN.append((new_f, old_g, c, state))
                 heapq.heapify(new_OPEN)
                 OPEN = new_OPEN
+                metrics['reprioritization_time'] += (time.time() - t0_reprio)
+
                 
         for neighbor in env.get_neighbors_3d(current):
             movement_cost = heuristic(current, neighbor)

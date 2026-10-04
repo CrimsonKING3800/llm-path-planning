@@ -1,0 +1,822 @@
+[
+  {
+    "trial": 0,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 1.2624506375898402e-14,
+        "expanded": 19,
+        "generated": 233
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 2.081581935764822,
+        "expanded": 21,
+        "generated": 195
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.312979541125756,
+        "optimality_gap": 4.163163871529644,
+        "expanded": 23,
+        "generated": 208
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 132,
+        "generated": 687
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 132,
+        "generated": 687
+      }
+    }
+  },
+  {
+    "trial": 1,
+    "optimal_cost": 28.141406665871944,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 19,
+        "generated": 231
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 19,
+        "generated": 228
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 30.48455241637956,
+        "optimality_gap": 8.326327743059235,
+        "expanded": 39,
+        "generated": 317
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 150,
+        "generated": 805
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 150,
+        "generated": 805
+      }
+    }
+  },
+  {
+    "trial": 2,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 29.362867593890414,
+        "optimality_gap": 2.2127970808054567,
+        "expanded": 20,
+        "generated": 223
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 21,
+        "generated": 209
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 28.777081156263506,
+        "optimality_gap": 0.17366142450786498,
+        "expanded": 312,
+        "generated": 1195
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 352,
+        "generated": 1311
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 352,
+        "generated": 1311
+      }
+    }
+  },
+  {
+    "trial": 3,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 1.2624506375898402e-14,
+        "expanded": 19,
+        "generated": 232
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 28.82356942067616,
+        "optimality_gap": 2.4240535055822328,
+        "expanded": 24,
+        "generated": 262
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.312979541125753,
+        "optimality_gap": 4.163163871529631,
+        "expanded": 61,
+        "generated": 398
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 145,
+        "generated": 767
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 145,
+        "generated": 767
+      }
+    }
+  },
+  {
+    "trial": 4,
+    "optimal_cost": 28.141406665871944,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 19,
+        "generated": 218
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.948654031517318,
+        "optimality_gap": 6.42202213664424,
+        "expanded": 22,
+        "generated": 244
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.312979541125753,
+        "optimality_gap": 4.163163871529617,
+        "expanded": 131,
+        "generated": 708
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 115,
+        "generated": 599
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 115,
+        "generated": 599
+      }
+    }
+  },
+  {
+    "trial": 5,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.777081156263506,
+        "optimality_gap": 2.258858265114622,
+        "expanded": 19,
+        "generated": 238
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 1.2624506375898402e-14,
+        "expanded": 20,
+        "generated": 223
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.948654031517318,
+        "optimality_gap": 6.4220221366442525,
+        "expanded": 178,
+        "generated": 836
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 161,
+        "generated": 826
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 161,
+        "generated": 826
+      }
+    }
+  },
+  {
+    "trial": 6,
+    "optimal_cost": 28.141406665871944,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 19,
+        "generated": 239
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.362867593890414,
+        "optimality_gap": 4.34044020087943,
+        "expanded": 20,
+        "generated": 227
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 28.77708115626351,
+        "optimality_gap": 2.2588582651146214,
+        "expanded": 92,
+        "generated": 503
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 134,
+        "generated": 721
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 134,
+        "generated": 721
+      }
+    }
+  },
+  {
+    "trial": 7,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 19,
+        "generated": 204
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.948654031517318,
+        "optimality_gap": 6.4220221366442525,
+        "expanded": 22,
+        "generated": 226
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.459243911067727,
+        "optimality_gap": 4.682911770696855,
+        "expanded": 27,
+        "generated": 261
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 132,
+        "generated": 721
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 132,
+        "generated": 721
+      }
+    }
+  },
+  {
+    "trial": 8,
+    "optimal_cost": 28.141406665871944,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 29.459243911067727,
+        "optimality_gap": 4.682911770696841,
+        "expanded": 20,
+        "generated": 210
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 30.580928733556874,
+        "optimality_gap": 8.668799312876645,
+        "expanded": 24,
+        "generated": 224
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 30.534440469144222,
+        "optimality_gap": 8.503604072409047,
+        "expanded": 235,
+        "generated": 1042
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 157,
+        "generated": 830
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 0.0,
+        "expanded": 157,
+        "generated": 830
+      }
+    }
+  },
+  {
+    "trial": 9,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 1.2367075564955895e-14,
+        "expanded": 20,
+        "generated": 239
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.362867593890414,
+        "optimality_gap": 2.2127970808054567,
+        "expanded": 21,
+        "generated": 226
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.409355858303066,
+        "optimality_gap": 2.374623766222174,
+        "expanded": 350,
+        "generated": 1296
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 355,
+        "generated": 1394
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 355,
+        "generated": 1394
+      }
+    }
+  },
+  {
+    "trial": 10,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 2.081581935764822,
+        "expanded": 20,
+        "generated": 233
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.459243911067727,
+        "optimality_gap": 4.682911770696855,
+        "expanded": 25,
+        "generated": 261
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.948654031517314,
+        "optimality_gap": 6.42202213664424,
+        "expanded": 36,
+        "generated": 316
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 138,
+        "generated": 730
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 138,
+        "generated": 730
+      }
+    }
+  },
+  {
+    "trial": 11,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 1.2367075564955895e-14,
+        "expanded": 20,
+        "generated": 220
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.55562022824504,
+        "optimality_gap": 2.8837733006546205,
+        "expanded": 20,
+        "generated": 229
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 31.26309148836109,
+        "optimality_gap": 8.827518845039496,
+        "expanded": 180,
+        "generated": 820
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 338,
+        "generated": 1312
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 338,
+        "generated": 1312
+      }
+    }
+  },
+  {
+    "trial": 12,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 19,
+        "generated": 248
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.409355858303066,
+        "optimality_gap": 4.505635441347041,
+        "expanded": 22,
+        "generated": 239
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.36286759389041,
+        "optimality_gap": 4.3404402008794305,
+        "expanded": 132,
+        "generated": 604
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 163,
+        "generated": 858
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 163,
+        "generated": 858
+      }
+    }
+  },
+  {
+    "trial": 13,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 1.2624506375898402e-14,
+        "expanded": 19,
+        "generated": 228
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.50573217548038,
+        "optimality_gap": 4.848107011164452,
+        "expanded": 23,
+        "generated": 199
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 30.091518613107283,
+        "optimality_gap": 6.929688946929262,
+        "expanded": 41,
+        "generated": 332
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 127,
+        "generated": 689
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 127,
+        "generated": 689
+      }
+    }
+  },
+  {
+    "trial": 14,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 29.362867593890414,
+        "optimality_gap": 2.2127970808054567,
+        "expanded": 21,
+        "generated": 229
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.459243911067727,
+        "optimality_gap": 2.548285190730039,
+        "expanded": 20,
+        "generated": 230
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.99514229592997,
+        "optimality_gap": 4.413759422519754,
+        "expanded": 109,
+        "generated": 593
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 354,
+        "generated": 1402
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 354,
+        "generated": 1402
+      }
+    }
+  },
+  {
+    "trial": 15,
+    "optimal_cost": 28.72719310349885,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 0.0,
+        "expanded": 20,
+        "generated": 199
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 30.77708115626351,
+        "optimality_gap": 7.135706037757632,
+        "expanded": 22,
+        "generated": 227
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.362867593890414,
+        "optimality_gap": 2.2127970808054442,
+        "expanded": 28,
+        "generated": 296
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 0.0,
+        "expanded": 354,
+        "generated": 1411
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 0.0,
+        "expanded": 354,
+        "generated": 1411
+      }
+    }
+  },
+  {
+    "trial": 16,
+    "optimal_cost": 28.14140666587194,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.777081156263506,
+        "optimality_gap": 2.258858265114622,
+        "expanded": 19,
+        "generated": 248
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 29.898765978752657,
+        "optimality_gap": 6.24474580729444,
+        "expanded": 23,
+        "generated": 230
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 28.141406665871944,
+        "optimality_gap": 1.2624506375898402e-14,
+        "expanded": 177,
+        "generated": 889
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 164,
+        "generated": 831
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.14140666587194,
+        "optimality_gap": 0.0,
+        "expanded": 164,
+        "generated": 831
+      }
+    }
+  },
+  {
+    "trial": 17,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.77708115626351,
+        "optimality_gap": 0.17366142450787736,
+        "expanded": 19,
+        "generated": 227
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 30.04503034869463,
+        "optimality_gap": 4.5874208470276185,
+        "expanded": 21,
+        "generated": 241
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 29.898765978752657,
+        "optimality_gap": 4.078271312595171,
+        "expanded": 45,
+        "generated": 377
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 369,
+        "generated": 1458
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 369,
+        "generated": 1458
+      }
+    }
+  },
+  {
+    "trial": 18,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 1.2367075564955895e-14,
+        "expanded": 20,
+        "generated": 241
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 30.680704839086197,
+        "optimality_gap": 6.800217927833064,
+        "expanded": 22,
+        "generated": 227
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 1.2367075564955895e-14,
+        "expanded": 822,
+        "generated": 2379
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 318,
+        "generated": 1319
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 318,
+        "generated": 1319
+      }
+    }
+  },
+  {
+    "trial": 19,
+    "optimal_cost": 28.727193103498845,
+    "runs": {
+      "oracle": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 1.2367075564955895e-14,
+        "expanded": 20,
+        "generated": 247
+      },
+      "near_optimal": {
+        "path_found": true,
+        "path_cost": 30.04503034869463,
+        "optimality_gap": 4.5874208470276185,
+        "expanded": 25,
+        "generated": 234
+      },
+      "random": {
+        "path_found": true,
+        "path_cost": 28.72719310349885,
+        "optimality_gap": 1.2367075564955895e-14,
+        "expanded": 414,
+        "generated": 1483
+      },
+      "adversarial": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 342,
+        "generated": 1382
+      },
+      "none": {
+        "path_found": true,
+        "path_cost": 28.727193103498845,
+        "optimality_gap": 0.0,
+        "expanded": 342,
+        "generated": 1382
+      }
+    }
+  }
+]

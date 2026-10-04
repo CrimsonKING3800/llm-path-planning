@@ -1,0 +1,622 @@
+[
+  {
+    "trial": 0,
+    "optimal_cost": 35.21247447773741,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 244,
+        "search_time": 0.0051457881927490234
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0007965564727783203
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0007860660552978516
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.000919342041015625
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0010211467742919922
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0012073516845703125
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0015316009521484375
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0020749568939208984
+      }
+    }
+  },
+  {
+    "trial": 1,
+    "optimal_cost": 35.79826091536432,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 461,
+        "search_time": 0.009316205978393555
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 36.48382345852054,
+        "optimality_gap": 1.9150722007894674,
+        "expanded": 24,
+        "search_time": 0.0007681846618652344
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.798260915364324,
+        "optimality_gap": 1.9848526648822237e-14,
+        "expanded": 25,
+        "search_time": 0.0008630752563476562
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0009021759033203125
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0009827613830566406
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 36.43393540575589,
+        "optimality_gap": 1.7757133283498312,
+        "expanded": 25,
+        "search_time": 0.0011937618255615234
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0013890266418457031
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0018687248229980469
+      }
+    }
+  },
+  {
+    "trial": 2,
+    "optimal_cost": 35.212474477737416,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 203,
+        "search_time": 0.004218339920043945
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.0007991790771484375
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.0012729167938232422
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.0010597705841064453
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.0014591217041015625
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0013523101806640625
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0017061233520507812
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0022852420806884766
+      }
+    }
+  },
+  {
+    "trial": 3,
+    "optimal_cost": 35.79826091536432,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 446,
+        "search_time": 0.009031295776367188
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 0.13935887243967554,
+        "expanded": 24,
+        "search_time": 0.0009109973907470703
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 37.06960989614745,
+        "optimality_gap": 3.551426656699623,
+        "expanded": 25,
+        "search_time": 0.0008101463317871094
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 36.43393540575588,
+        "optimality_gap": 1.7757133283498114,
+        "expanded": 25,
+        "search_time": 0.0008955001831054688
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.001041412353515625
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.798260915364324,
+        "optimality_gap": 1.9848526648822237e-14,
+        "expanded": 25,
+        "search_time": 0.0011777877807617188
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0014882087707519531
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0019605159759521484
+      }
+    }
+  },
+  {
+    "trial": 4,
+    "optimal_cost": 35.212474477737416,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 214,
+        "search_time": 0.0044405460357666016
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0007441043853759766
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0008263587951660156
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0008864402770996094
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0010304450988769531
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0012240409851074219
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0015764236450195312
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0020928382873535156
+      }
+    }
+  },
+  {
+    "trial": 5,
+    "optimal_cost": 35.21247447773741,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 207,
+        "search_time": 0.004942655563354492
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0007448196411132812
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0008058547973632812
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0008761882781982422
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 2.0178722066503188e-14,
+        "expanded": 24,
+        "search_time": 0.0010120868682861328
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0011510848999023438
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0014469623565673828
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.21247447773741,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.001961231231689453
+      }
+    }
+  },
+  {
+    "trial": 6,
+    "optimal_cost": 35.79826091536432,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 414,
+        "search_time": 0.008886575698852539
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.798260915364324,
+        "optimality_gap": 1.9848526648822237e-14,
+        "expanded": 25,
+        "search_time": 0.0008325576782226562
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 36.43393540575589,
+        "optimality_gap": 1.7757133283498312,
+        "expanded": 25,
+        "search_time": 0.00078582763671875
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 36.384047352991224,
+        "optimality_gap": 1.6363544559101557,
+        "expanded": 26,
+        "search_time": 0.0009431838989257812
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.798260915364324,
+        "optimality_gap": 1.9848526648822237e-14,
+        "expanded": 25,
+        "search_time": 0.0011131763458251953
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.798260915364324,
+        "optimality_gap": 1.9848526648822237e-14,
+        "expanded": 25,
+        "search_time": 0.0013816356658935547
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0016217231750488281
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 0.0,
+        "expanded": 25,
+        "search_time": 0.0021696090698242188
+      }
+    }
+  },
+  {
+    "trial": 7,
+    "optimal_cost": 35.212474477737416,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 142,
+        "search_time": 0.003041982650756836
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.79826091536432,
+        "optimality_gap": 1.6635764634980585,
+        "expanded": 25,
+        "search_time": 0.0008029937744140625
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0008807182312011719
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0009677410125732422
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0012907981872558594
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0015115737915039062
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0017764568328857422
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.002438068389892578
+      }
+    }
+  },
+  {
+    "trial": 8,
+    "optimal_cost": 35.212474477737416,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 165,
+        "search_time": 0.003650188446044922
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0008337497711181641
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0009210109710693359
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0010004043579101562
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0011966228485107422
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0014395713806152344
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0018384456634521484
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.002446413040161133
+      }
+    }
+  },
+  {
+    "trial": 9,
+    "optimal_cost": 35.212474477737416,
+    "runs": {
+      "0": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 194,
+        "search_time": 0.004118919372558594
+      },
+      "1": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0007953643798828125
+      },
+      "2": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.0008914470672607422
+      },
+      "3": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.000957489013671875
+      },
+      "5": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.0011174678802490234
+      },
+      "8": {
+        "path_found": true,
+        "path_cost": 35.84814896812898,
+        "optimality_gap": 1.805253677339437,
+        "expanded": 24,
+        "search_time": 0.001383066177368164
+      },
+      "12": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0016694068908691406
+      },
+      "20": {
+        "path_found": true,
+        "path_cost": 35.212474477737416,
+        "optimality_gap": 0.0,
+        "expanded": 24,
+        "search_time": 0.0022792816162109375
+      }
+    }
+  }
+]
