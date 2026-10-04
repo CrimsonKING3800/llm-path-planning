@@ -267,7 +267,7 @@ The experimental suite (`experiments/runner.py`) uses **synthetic waypoints** to
 - **E8: Reprioritization Overhead**: Profiles the computational cost (re-heapification) incurred when the algorithm reaches a waypoint and switches targets.
 
 ### Limitations of Methodology
-Because the evaluation uses synthetic waypoints, it rigorously proves how the algorithm behaves *if* given certain inputs, but it establishes absolutely no evidence regarding the capability of real-world LLMs to actually generate those inputs.
+Because the evaluation uses synthetic waypoints, it rigorously evaluates how the algorithm behaves *if* given certain inputs, but it establishes absolutely no evidence regarding the capability of real-world LLMs to actually generate those inputs.
 
 ---
 
@@ -393,7 +393,7 @@ Oracle waypoints collapse the search space (from 225 nodes down to 19.5). Howeve
 ## 12. Critical Analysis
 
 ### Strengths
-- The implementation is mechanically robust. The 27/27 match with Dijkstra proves the engine works.
+- The implementation is mechanically robust. The 27/27 match with Dijkstra confirms the engine works as expected.
 - The use of synthetic waypoints is a clever, scientifically rigorous way to evaluate the algorithm independently from LLM prompt-engineering variability.
 - The fallback logic safely reverts to A* when the LLM times out or fails.
 
@@ -456,8 +456,8 @@ The following are proposed future research directions:
 **Q: Why does waypoint ordering matter so much?**
 **A**: (Experiment 4). The algorithm blindly trusts the target sequence. If given a reversed sequence, the heuristic violently forces the search backward away from the goal to reach the first waypoint, ignoring the natural flow of the graph, expanding thousands of nodes in a useless zig-zag pattern.
 
-**Q: What do these experiments actually prove and NOT prove?**
-**A**: They rigorously prove that **if** an algorithm receives high-quality waypoints, it expands fewer nodes, and **if** it receives badly ordered waypoints, it fails catastrophically. They **do not prove** that an LLM can actually generate high-quality, correctly ordered waypoints in complex 3D environments.
+**Q: What do these experiments actually demonstrate and NOT demonstrate?**
+**A**: They rigorously demonstrate that **if** an algorithm receives high-quality waypoints, it expands fewer nodes, and **if** it receives badly ordered waypoints, it fails catastrophically. They **do not establish** that an LLM can actually generate high-quality, correctly ordered waypoints in complex 3D environments.
 
 **Q: What should the next meaningful research experiment be?**
-**A**: A statistical evaluation of live LLMs (e.g., Llama 3) prompted with various map compressions, measuring the actual success rate, spatial validity, and geometric ordering of the generated waypoints. This is required to prove the premise is viable outside of synthetic test conditions.
+**A**: A statistical evaluation of live LLMs (e.g., Llama 3) prompted with various map compressions, measuring the actual success rate, spatial validity, and geometric ordering of the generated waypoints. This is required to confirm the premise is viable outside of synthetic test conditions.

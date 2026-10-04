@@ -1,3 +1,11 @@
 __pycache__/
 results/
 failure_results/
+experiments/results/
+experiments/__pycache__/
+venv/
+.env
+.vscode/
+.idea/
+*.pyc
+.DS_Store
